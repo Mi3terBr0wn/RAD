@@ -85,6 +85,22 @@ namespace RAD
             this.dataGridViewComboBoxColumn14 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewComboBoxColumn15 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewComboBoxColumn16 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewComboBoxColumn17 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewComboBoxColumn18 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewComboBoxColumn19 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewComboBoxColumn20 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewComboBoxColumn21 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewComboBoxColumn22 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewComboBoxColumn23 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewComboBoxColumn24 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewComboBoxColumn25 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewComboBoxColumn26 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewComboBoxColumn27 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewComboBoxColumn28 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewComboBoxColumn29 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewComboBoxColumn30 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewComboBoxColumn31 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.incomeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -94,6 +110,9 @@ namespace RAD
             this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.consumptionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Product = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -104,10 +123,10 @@ namespace RAD
             this.productConsumptionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.incomeProductBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.paymentBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label11 = new System.Windows.Forms.Label();
+            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.consumptionBindingNavigator)).BeginInit();
             this.consumptionBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.consumptionDataGridView)).BeginInit();
@@ -559,9 +578,9 @@ namespace RAD
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(-1, 770);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(142, 13);
+            this.label10.Size = new System.Drawing.Size(271, 13);
             this.label10.TabIndex = 20;
-            this.label10.Text = "Отчет о движении товаров";
+            this.label10.Text = "Отчеты о движении товаров за период и накладных";
             // 
             // dataGridViewComboBoxColumn10
             // 
@@ -604,6 +623,102 @@ namespace RAD
             this.dataGridViewComboBoxColumn16.DataPropertyName = "Product";
             this.dataGridViewComboBoxColumn16.HeaderText = "Товар";
             this.dataGridViewComboBoxColumn16.Name = "dataGridViewComboBoxColumn16";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Quantity";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Количество";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewComboBoxColumn17
+            // 
+            this.dataGridViewComboBoxColumn17.DataPropertyName = "Product";
+            this.dataGridViewComboBoxColumn17.HeaderText = "Товар";
+            this.dataGridViewComboBoxColumn17.Name = "dataGridViewComboBoxColumn17";
+            // 
+            // dataGridViewComboBoxColumn18
+            // 
+            this.dataGridViewComboBoxColumn18.DataPropertyName = "Product";
+            this.dataGridViewComboBoxColumn18.HeaderText = "Товар";
+            this.dataGridViewComboBoxColumn18.Name = "dataGridViewComboBoxColumn18";
+            // 
+            // dataGridViewComboBoxColumn19
+            // 
+            this.dataGridViewComboBoxColumn19.DataPropertyName = "Product";
+            this.dataGridViewComboBoxColumn19.HeaderText = "Товар";
+            this.dataGridViewComboBoxColumn19.Name = "dataGridViewComboBoxColumn19";
+            // 
+            // dataGridViewComboBoxColumn20
+            // 
+            this.dataGridViewComboBoxColumn20.DataPropertyName = "Product";
+            this.dataGridViewComboBoxColumn20.HeaderText = "Товар";
+            this.dataGridViewComboBoxColumn20.Name = "dataGridViewComboBoxColumn20";
+            // 
+            // dataGridViewComboBoxColumn21
+            // 
+            this.dataGridViewComboBoxColumn21.DataPropertyName = "Product";
+            this.dataGridViewComboBoxColumn21.HeaderText = "Товар";
+            this.dataGridViewComboBoxColumn21.Name = "dataGridViewComboBoxColumn21";
+            // 
+            // dataGridViewComboBoxColumn22
+            // 
+            this.dataGridViewComboBoxColumn22.DataPropertyName = "Product";
+            this.dataGridViewComboBoxColumn22.HeaderText = "Товар";
+            this.dataGridViewComboBoxColumn22.Name = "dataGridViewComboBoxColumn22";
+            // 
+            // dataGridViewComboBoxColumn23
+            // 
+            this.dataGridViewComboBoxColumn23.DataPropertyName = "Product";
+            this.dataGridViewComboBoxColumn23.HeaderText = "Товар";
+            this.dataGridViewComboBoxColumn23.Name = "dataGridViewComboBoxColumn23";
+            // 
+            // dataGridViewComboBoxColumn24
+            // 
+            this.dataGridViewComboBoxColumn24.DataPropertyName = "Product";
+            this.dataGridViewComboBoxColumn24.HeaderText = "Товар";
+            this.dataGridViewComboBoxColumn24.Name = "dataGridViewComboBoxColumn24";
+            // 
+            // dataGridViewComboBoxColumn25
+            // 
+            this.dataGridViewComboBoxColumn25.DataPropertyName = "Product";
+            this.dataGridViewComboBoxColumn25.HeaderText = "Товар";
+            this.dataGridViewComboBoxColumn25.Name = "dataGridViewComboBoxColumn25";
+            // 
+            // dataGridViewComboBoxColumn26
+            // 
+            this.dataGridViewComboBoxColumn26.DataPropertyName = "Product";
+            this.dataGridViewComboBoxColumn26.HeaderText = "Товар";
+            this.dataGridViewComboBoxColumn26.Name = "dataGridViewComboBoxColumn26";
+            // 
+            // dataGridViewComboBoxColumn27
+            // 
+            this.dataGridViewComboBoxColumn27.DataPropertyName = "Product";
+            this.dataGridViewComboBoxColumn27.HeaderText = "Товар";
+            this.dataGridViewComboBoxColumn27.Name = "dataGridViewComboBoxColumn27";
+            // 
+            // dataGridViewComboBoxColumn28
+            // 
+            this.dataGridViewComboBoxColumn28.DataPropertyName = "Product";
+            this.dataGridViewComboBoxColumn28.HeaderText = "Товар";
+            this.dataGridViewComboBoxColumn28.Name = "dataGridViewComboBoxColumn28";
+            // 
+            // dataGridViewComboBoxColumn29
+            // 
+            this.dataGridViewComboBoxColumn29.DataPropertyName = "Product";
+            this.dataGridViewComboBoxColumn29.HeaderText = "Товар";
+            this.dataGridViewComboBoxColumn29.Name = "dataGridViewComboBoxColumn29";
+            // 
+            // dataGridViewComboBoxColumn30
+            // 
+            this.dataGridViewComboBoxColumn30.DataPropertyName = "Product";
+            this.dataGridViewComboBoxColumn30.HeaderText = "Товар";
+            this.dataGridViewComboBoxColumn30.Name = "dataGridViewComboBoxColumn30";
+            // 
+            // dataGridViewComboBoxColumn31
+            // 
+            this.dataGridViewComboBoxColumn31.DataPropertyName = "Product";
+            this.dataGridViewComboBoxColumn31.HeaderText = "Товар";
+            this.dataGridViewComboBoxColumn31.Name = "dataGridViewComboBoxColumn31";
             // 
             // dataGridViewTextBoxColumn6
             // 
@@ -650,6 +765,24 @@ namespace RAD
             // consumptionBindingSource
             // 
             this.consumptionBindingSource.DataSource = typeof(RAD.DataAccess.Entity.Consumption);
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn15.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "Price";
+            this.dataGridViewTextBoxColumn16.HeaderText = "Цена";
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn17.HeaderText = "Название";
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
             // 
             // dataGridViewTextBoxColumn9
             // 
@@ -709,35 +842,46 @@ namespace RAD
             // 
             this.paymentBindingSource.DataSource = typeof(RAD.DataAccess.Entity.Payment);
             // 
-            // dataGridViewTextBoxColumn15
+            // label11
             // 
-            this.dataGridViewTextBoxColumn15.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn15.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(-3, 840);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(358, 13);
+            this.label11.TabIndex = 21;
+            this.label11.Text = "Отчет отчет соотношения сумм полученных и оплаченных накладных";
             // 
-            // dataGridViewTextBoxColumn16
+            // dateTimePicker4
             // 
-            this.dataGridViewTextBoxColumn16.DataPropertyName = "Price";
-            this.dataGridViewTextBoxColumn16.HeaderText = "Цена";
-            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            this.dateTimePicker4.Location = new System.Drawing.Point(158, 856);
+            this.dateTimePicker4.Name = "dateTimePicker4";
+            this.dateTimePicker4.Size = new System.Drawing.Size(155, 20);
+            this.dateTimePicker4.TabIndex = 23;
             // 
-            // dataGridViewTextBoxColumn17
+            // dateTimePicker3
             // 
-            this.dataGridViewTextBoxColumn17.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn17.HeaderText = "Название";
-            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            this.dateTimePicker3.Location = new System.Drawing.Point(0, 856);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(150, 20);
+            this.dateTimePicker3.TabIndex = 22;
             // 
-            // dataGridViewTextBoxColumn7
+            // comboBox1
             // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Quantity";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Количество";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(319, 855);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 24;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1073, 932);
+            this.ClientSize = new System.Drawing.Size(1073, 1028);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.dateTimePicker4);
+            this.Controls.Add(this.dateTimePicker3);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label9);
@@ -865,6 +1009,25 @@ namespace RAD
         private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewComboBoxColumn14;
         private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewComboBoxColumn15;
         private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewComboBoxColumn16;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewComboBoxColumn17;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewComboBoxColumn18;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewComboBoxColumn19;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewComboBoxColumn20;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewComboBoxColumn21;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewComboBoxColumn22;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewComboBoxColumn23;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewComboBoxColumn24;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewComboBoxColumn25;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewComboBoxColumn26;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewComboBoxColumn27;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewComboBoxColumn28;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewComboBoxColumn29;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewComboBoxColumn30;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewComboBoxColumn31;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.DateTimePicker dateTimePicker4;
+        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 

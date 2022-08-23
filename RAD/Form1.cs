@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using RAD.DataAccess;
 using System.Data.Entity;
 using Aspose.Cells;
+using Aspose.Words;
 
 namespace RAD
 {
@@ -202,10 +203,9 @@ namespace RAD
                 row = dataTable1.NewRow();
                 row[0] = "Расход";
                 row[1] = consumption.Product.Name;
-                row[2] = consumption.Product.Price;
+                row[2] = consumption.Product.Price*1.15;
                 row[3] = consumption.Quantity;
-       
-                row[5] = consumption.Consumption.Date.ToString();
+                row[4] = consumption.Consumption.Date.ToString();
 
                 dataTable1.Rows.Add(row);
             }
@@ -213,6 +213,89 @@ namespace RAD
             worksheet1.Cells.ImportData(dataTable1, 0, 0, null);
             string filepath = "D:/" + dateTimePicker1.Value.ToShortDateString() + "-" + dateTimePicker2.Value.ToShortDateString();
             workbook.Save(filepath + "report.xlsx");
+
+            Document doc = new Document();
+            DocumentBuilder builder = new DocumentBuilder(doc);
+            builder.Write("Приходная накладная");
+            builder.StartTable();
+            builder.InsertCell();
+            builder.Write("Дата");
+            builder.InsertCell();
+            builder.Write("Имя поставщика");
+            builder.InsertCell();
+            builder.Write("Адрес поставщика"); 
+            builder.InsertCell();
+            builder.Write("Название товара"); 
+            builder.InsertCell();
+            builder.Write("Цена товара"); 
+            builder.InsertCell();
+            builder.Write("Количество получено"); 
+            builder.InsertCell();
+            builder.Write("Сумма платежей");
+            builder.EndRow();
+            foreach (var income in Incomes)
+            {
+                builder.InsertCell();
+                builder.Write(income.Income.Date.ToString());
+                builder.InsertCell();
+                builder.Write(income.Income.Provider.Name);
+                builder.InsertCell();
+                builder.Write(income.Income.Provider.Adress);
+                builder.InsertCell();
+                builder.Write(income.Product.Name);
+                builder.InsertCell();
+                builder.Write(income.Product.Price.ToString());
+                builder.InsertCell();
+                builder.Write(income.Quantity.ToString());
+                builder.InsertCell();
+                builder.Write((income.Quantity* income.Product.Price).ToString());
+                builder.EndRow();
+            }
+            /*foreach (var consumption in Consumptions)
+
+            {
+                row = dataTable1.NewRow();
+                row[0] = "Расход";
+                row[1] = consumption.Product.Name;
+                row[2] = consumption.Product.Price;
+                row[3] = consumption.Quantity;
+                row[4] = consumption.Consumption.Date.ToString();
+
+                dataTable1.Rows.Add(row);
+            }*/
+
+            builder.EndTable();
+
+            builder.Write("Расходная накладная");
+            builder.StartTable();
+            builder.InsertCell();
+            builder.Write("Дата");
+            builder.InsertCell();
+            builder.Write("Название товара");
+            builder.InsertCell();
+            builder.Write("Цена товара");
+            builder.InsertCell();
+            builder.Write("Количество продано");
+            builder.InsertCell();
+            builder.Write("Сумма платежей");
+            builder.EndRow();
+            foreach (var consumption in Consumptions)
+            {
+                builder.InsertCell();
+                builder.Write(consumption.Consumption.Date.ToString());
+                builder.InsertCell();
+                builder.Write(consumption.Product.Name);
+                builder.InsertCell();
+                builder.Write((consumption.Product.Price * 1.15).ToString());
+                builder.InsertCell();
+                builder.Write(consumption.Quantity.ToString());
+                builder.InsertCell();
+                builder.Write((consumption.Quantity * consumption.Product.Price * 1.15).ToString());
+                builder.EndRow();
+            }
+            builder.EndTable();
+
+            doc.Save("D:/report.docx");
         }
 
     }
