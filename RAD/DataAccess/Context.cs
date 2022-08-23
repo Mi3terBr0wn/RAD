@@ -10,7 +10,7 @@ namespace RAD.DataAccess
 {
     public class Context : DbContext
     {
-        public Context() : base("Host=localhost;Database=postgres;Username=postgres;Password=password") { }
+        public Context() : base("Host=localhost;Database=postgres;Username=postgres;Password=mysecretpassword") { }
         public DbSet<Product> Products { get; set; }
         public DbSet<Consumption> Consumptions { get; set; }
         public DbSet<Income> Incomes { get; set; }
