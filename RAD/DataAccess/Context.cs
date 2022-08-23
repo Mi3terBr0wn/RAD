@@ -17,6 +17,7 @@ namespace RAD.DataAccess
         public DbSet<IncomeProduct> IncomeProducts { get; set; }
         public DbSet<ProductConsumption> ProductConsumptions { get; set; }
         public DbSet<Provider> Providers { get; set; }
+        public DbSet<Payment> Payments { get; set; }
 
     }
 }

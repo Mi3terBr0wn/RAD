@@ -11,6 +11,7 @@ using RAD.DataAccess;
 using System.Data.Entity;
 using Aspose.Cells;
 using Aspose.Words;
+using RAD.DataAccess.Entity;
 
 namespace RAD
 {
@@ -41,7 +42,7 @@ namespace RAD
             productBindingSource.DataSource = context.Products.Local.ToBindingList();
             productConsumptionBindingSource.DataSource = context.ProductConsumptions.Local.ToBindingList();
             providerBindingSource.DataSource = context.Providers.Local.ToBindingList();
-            //((System.Windows.Forms.ListBox)checkedListBox1).DataSource = context.Providers.Local.ToBindingList();
+            ((System.Windows.Forms.ListBox)checkedListBox1).DataSource = context.Providers.Local.ToBindingList();
             //paymentDataGridView.
         }
 
@@ -298,5 +299,50 @@ namespace RAD
             doc.Save("D:/report.docx");
         }
 
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Dictionary<string, double> result = new Dictionary<string, double>();
+
+            foreach (var Provider in checkedListBox1.CheckedItems.OfType<Provider>().ToList())
+            {
+
+                var Incomes = context.Incomes.Local.ToList().Where(income => income.ProviderId==Provider.Id);
+                List<int> incomesId = new List<int>();
+                foreach (var Income in Incomes)
+                {
+                    incomesId.Add(Income.Id);
+
+                }
+                double s = 0, s1 = 0;
+                foreach (var income in Incomes)
+                {
+                    var payments = context.Payments.Local.ToList().Where(payment => incomesId.Contains(payment.IncomeId));
+                    foreach (var payment in payments)
+                    {
+                        s += payment.Amount;
+                    }
+                    var products = context.IncomeProducts.Local.ToList().Where(product => incomesId.Contains(product.IncomeId));
+                    foreach (var product in products)
+                    {
+                        s1 += product.Product.Price * product.Quantity;
+                    }
+
+                }
+                result.Add(Provider.Name, s / s1);
+            }
+            richTextBox1.AppendText("Отчет за период " + dateTimePicker3.Value + "-" + dateTimePicker4.Value + "\n");
+            foreach (var res in result)
+            {
+                richTextBox1.AppendText(res.Key + " " + res.Value.ToString() + "\n");
+            }
+            
+        
+
+        }
     }
 }

@@ -33,6 +33,7 @@ namespace RAD
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.consumptionBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.consumptionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -45,11 +46,33 @@ namespace RAD
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.consumptionBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.consumptionDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.incomeDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProviderId = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.providerBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.incomeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.incomeProductDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Product = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productConsumptionDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductId = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.providerDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -58,17 +81,14 @@ namespace RAD
             this.label6 = new System.Windows.Forms.Label();
             this.dataGridViewComboBoxColumn1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewComboBoxColumn2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewComboBoxColumn3 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewComboBoxColumn4 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewComboBoxColumn5 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.ProductId = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewComboBoxColumn6 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.label7 = new System.Windows.Forms.Label();
             this.paymentDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProviderId = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewComboBoxColumn7 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewComboBoxColumn8 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewComboBoxColumn9 = new System.Windows.Forms.DataGridViewComboBoxColumn();
@@ -85,7 +105,6 @@ namespace RAD
             this.dataGridViewComboBoxColumn14 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewComboBoxColumn15 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewComboBoxColumn16 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewComboBoxColumn17 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewComboBoxColumn18 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewComboBoxColumn19 = new System.Windows.Forms.DataGridViewComboBoxColumn();
@@ -101,45 +120,28 @@ namespace RAD
             this.dataGridViewComboBoxColumn29 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewComboBoxColumn30 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewComboBoxColumn31 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.incomeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.providerBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.consumptionBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Product = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productConsumptionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.incomeProductBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.paymentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label11 = new System.Windows.Forms.Label();
             this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             ((System.ComponentModel.ISupportInitialize)(this.consumptionBindingNavigator)).BeginInit();
             this.consumptionBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.consumptionBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.consumptionDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.incomeDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.providerBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.incomeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.incomeProductDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productConsumptionDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.providerDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.paymentDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.incomeBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.providerBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.consumptionBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productConsumptionBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.incomeProductBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.paymentBindingSource)).BeginInit();
@@ -183,6 +185,10 @@ namespace RAD
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorAddNewItem.Text = "Добавить";
+            // 
+            // consumptionBindingSource
+            // 
+            this.consumptionBindingSource.DataSource = typeof(RAD.DataAccess.Entity.Consumption);
             // 
             // bindingNavigatorCountItem
             // 
@@ -283,6 +289,18 @@ namespace RAD
             this.consumptionDataGridView.Size = new System.Drawing.Size(527, 220);
             this.consumptionDataGridView.TabIndex = 1;
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Date";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Дата";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
             // incomeDataGridView
             // 
             this.incomeDataGridView.AutoGenerateColumns = false;
@@ -298,6 +316,42 @@ namespace RAD
             this.incomeDataGridView.Size = new System.Drawing.Size(444, 220);
             this.incomeDataGridView.TabIndex = 2;
             this.incomeDataGridView.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.incomeDataGridView_DataError);
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // ProviderId
+            // 
+            this.ProviderId.DataPropertyName = "ProviderId";
+            this.ProviderId.DataSource = this.providerBindingSource;
+            this.ProviderId.DisplayMember = "Name";
+            this.ProviderId.HeaderText = "Поставщик";
+            this.ProviderId.Name = "ProviderId";
+            this.ProviderId.ValueMember = "Id";
+            // 
+            // providerBindingSource
+            // 
+            this.providerBindingSource.DataSource = typeof(RAD.DataAccess.Entity.Provider);
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Date";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Дата";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewCheckBoxColumn1
+            // 
+            this.dataGridViewCheckBoxColumn1.DataPropertyName = "Paid";
+            this.dataGridViewCheckBoxColumn1.HeaderText = "Оплачено";
+            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
+            this.dataGridViewCheckBoxColumn1.ReadOnly = true;
+            // 
+            // incomeBindingSource
+            // 
+            this.incomeBindingSource.DataSource = typeof(RAD.DataAccess.Entity.Income);
             // 
             // incomeProductDataGridView
             // 
@@ -315,6 +369,31 @@ namespace RAD
             this.incomeProductDataGridView.TabIndex = 3;
             this.incomeProductDataGridView.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.incomeProductDataGridView_DataError);
             // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn9.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            // 
+            // Product
+            // 
+            this.Product.DataPropertyName = "Product";
+            this.Product.DataSource = this.productBindingSource;
+            this.Product.DisplayMember = "Name";
+            this.Product.HeaderText = "Товар";
+            this.Product.Name = "Product";
+            this.Product.ValueMember = "Id";
+            // 
+            // productBindingSource
+            // 
+            this.productBindingSource.DataSource = typeof(RAD.DataAccess.Entity.Product);
+            // 
+            // Quantity
+            // 
+            this.Quantity.DataPropertyName = "Quantity";
+            this.Quantity.HeaderText = "Количество";
+            this.Quantity.Name = "Quantity";
+            // 
             // productDataGridView
             // 
             this.productDataGridView.AutoGenerateColumns = false;
@@ -331,6 +410,30 @@ namespace RAD
             this.productDataGridView.TabIndex = 4;
             this.productDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.productDataGridView_CellContentClick);
             // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn15.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "Price";
+            this.dataGridViewTextBoxColumn16.HeaderText = "Цена";
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn17.HeaderText = "Название";
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Quantity";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Количество";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
             // productConsumptionDataGridView
             // 
             this.productConsumptionDataGridView.AutoGenerateColumns = false;
@@ -339,14 +442,34 @@ namespace RAD
             this.dataGridViewTextBoxColumn20,
             this.ProductId,
             this.dataGridViewTextBoxColumn3});
-            this.productConsumptionDataGridView.DataMember = "ProductConsumptions";
-            this.productConsumptionDataGridView.DataSource = this.consumptionBindingSource;
+            this.productConsumptionDataGridView.DataSource = this.providerBindingSource;
             this.productConsumptionDataGridView.Location = new System.Drawing.Point(533, 534);
             this.productConsumptionDataGridView.Name = "productConsumptionDataGridView";
             this.productConsumptionDataGridView.Size = new System.Drawing.Size(540, 220);
             this.productConsumptionDataGridView.TabIndex = 5;
             this.productConsumptionDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.productConsumptionDataGridView_CellContentClick);
             this.productConsumptionDataGridView.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.productConsumptionDataGridView_DataError);
+            // 
+            // dataGridViewTextBoxColumn20
+            // 
+            this.dataGridViewTextBoxColumn20.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn20.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
+            // 
+            // ProductId
+            // 
+            this.ProductId.DataPropertyName = "ProductId";
+            this.ProductId.DataSource = this.productBindingSource;
+            this.ProductId.DisplayMember = "Name";
+            this.ProductId.HeaderText = "Товар";
+            this.ProductId.Name = "ProductId";
+            this.ProductId.ValueMember = "Id";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Quantity";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Количество";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
             // providerDataGridView
             // 
@@ -361,6 +484,24 @@ namespace RAD
             this.providerDataGridView.Name = "providerDataGridView";
             this.providerDataGridView.Size = new System.Drawing.Size(540, 220);
             this.providerDataGridView.TabIndex = 6;
+            // 
+            // dataGridViewTextBoxColumn26
+            // 
+            this.dataGridViewTextBoxColumn26.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn26.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
+            // 
+            // dataGridViewTextBoxColumn27
+            // 
+            this.dataGridViewTextBoxColumn27.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn27.HeaderText = "Имя поставщика";
+            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
+            // 
+            // dataGridViewTextBoxColumn28
+            // 
+            this.dataGridViewTextBoxColumn28.DataPropertyName = "Adress";
+            this.dataGridViewTextBoxColumn28.HeaderText = "Адрес поставщика";
+            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
             // 
             // label1
             // 
@@ -430,12 +571,6 @@ namespace RAD
             this.dataGridViewComboBoxColumn2.HeaderText = "Поступление";
             this.dataGridViewComboBoxColumn2.Name = "dataGridViewComboBoxColumn2";
             // 
-            // Quantity
-            // 
-            this.Quantity.DataPropertyName = "Quantity";
-            this.Quantity.HeaderText = "Количество";
-            this.Quantity.Name = "Quantity";
-            // 
             // dataGridViewComboBoxColumn3
             // 
             this.dataGridViewComboBoxColumn3.DataPropertyName = "Product";
@@ -453,21 +588,6 @@ namespace RAD
             this.dataGridViewComboBoxColumn5.DataPropertyName = "Product";
             this.dataGridViewComboBoxColumn5.HeaderText = "Товар";
             this.dataGridViewComboBoxColumn5.Name = "dataGridViewComboBoxColumn5";
-            // 
-            // ProductId
-            // 
-            this.ProductId.DataPropertyName = "ProductId";
-            this.ProductId.DataSource = this.productBindingSource;
-            this.ProductId.DisplayMember = "Name";
-            this.ProductId.HeaderText = "Товар";
-            this.ProductId.Name = "ProductId";
-            this.ProductId.ValueMember = "Id";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Quantity";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Количество";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
             // dataGridViewComboBoxColumn6
             // 
@@ -498,20 +618,17 @@ namespace RAD
             this.paymentDataGridView.Size = new System.Drawing.Size(252, 220);
             this.paymentDataGridView.TabIndex = 14;
             // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
             // Amount
             // 
             this.Amount.DataPropertyName = "Amount";
             this.Amount.HeaderText = "Сумма";
             this.Amount.Name = "Amount";
-            // 
-            // ProviderId
-            // 
-            this.ProviderId.DataPropertyName = "ProviderId";
-            this.ProviderId.DataSource = this.providerBindingSource;
-            this.ProviderId.DisplayMember = "Name";
-            this.ProviderId.HeaderText = "Поставщик";
-            this.ProviderId.Name = "ProviderId";
-            this.ProviderId.ValueMember = "Id";
             // 
             // dataGridViewComboBoxColumn7
             // 
@@ -624,12 +741,6 @@ namespace RAD
             this.dataGridViewComboBoxColumn16.HeaderText = "Товар";
             this.dataGridViewComboBoxColumn16.Name = "dataGridViewComboBoxColumn16";
             // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Quantity";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Количество";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
             // dataGridViewComboBoxColumn17
             // 
             this.dataGridViewComboBoxColumn17.DataPropertyName = "Product";
@@ -720,116 +831,6 @@ namespace RAD
             this.dataGridViewComboBoxColumn31.HeaderText = "Товар";
             this.dataGridViewComboBoxColumn31.Name = "dataGridViewComboBoxColumn31";
             // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // incomeBindingSource
-            // 
-            this.incomeBindingSource.DataSource = typeof(RAD.DataAccess.Entity.Income);
-            // 
-            // dataGridViewTextBoxColumn26
-            // 
-            this.dataGridViewTextBoxColumn26.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn26.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
-            // 
-            // dataGridViewTextBoxColumn27
-            // 
-            this.dataGridViewTextBoxColumn27.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn27.HeaderText = "Имя поставщика";
-            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
-            // 
-            // dataGridViewTextBoxColumn28
-            // 
-            this.dataGridViewTextBoxColumn28.DataPropertyName = "Adress";
-            this.dataGridViewTextBoxColumn28.HeaderText = "Адрес поставщика";
-            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
-            // 
-            // providerBindingSource
-            // 
-            this.providerBindingSource.DataSource = typeof(RAD.DataAccess.Entity.Provider);
-            // 
-            // dataGridViewTextBoxColumn20
-            // 
-            this.dataGridViewTextBoxColumn20.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn20.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
-            // 
-            // productBindingSource
-            // 
-            this.productBindingSource.DataSource = typeof(RAD.DataAccess.Entity.Product);
-            // 
-            // consumptionBindingSource
-            // 
-            this.consumptionBindingSource.DataSource = typeof(RAD.DataAccess.Entity.Consumption);
-            // 
-            // dataGridViewTextBoxColumn15
-            // 
-            this.dataGridViewTextBoxColumn15.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn15.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-            // 
-            // dataGridViewTextBoxColumn16
-            // 
-            this.dataGridViewTextBoxColumn16.DataPropertyName = "Price";
-            this.dataGridViewTextBoxColumn16.HeaderText = "Цена";
-            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
-            // 
-            // dataGridViewTextBoxColumn17
-            // 
-            this.dataGridViewTextBoxColumn17.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn17.HeaderText = "Название";
-            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn9.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            // 
-            // Product
-            // 
-            this.Product.DataPropertyName = "Product";
-            this.Product.DataSource = this.productBindingSource;
-            this.Product.DisplayMember = "Name";
-            this.Product.HeaderText = "Товар";
-            this.Product.Name = "Product";
-            this.Product.ValueMember = "Id";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Date";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Дата";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewCheckBoxColumn1
-            // 
-            this.dataGridViewCheckBoxColumn1.DataPropertyName = "Paid";
-            this.dataGridViewCheckBoxColumn1.HeaderText = "Оплачено";
-            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
-            this.dataGridViewCheckBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Date";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Дата";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
             // productConsumptionBindingSource
             // 
             this.productConsumptionBindingSource.DataSource = typeof(RAD.DataAccess.Entity.ProductConsumption);
@@ -865,20 +866,40 @@ namespace RAD
             this.dateTimePicker3.Size = new System.Drawing.Size(150, 20);
             this.dateTimePicker3.TabIndex = 22;
             // 
-            // comboBox1
+            // button2
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(319, 855);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 24;
+            this.button2.Location = new System.Drawing.Point(446, 853);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(95, 23);
+            this.button2.TabIndex = 25;
+            this.button2.Text = "Сформировать";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(0, 926);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(541, 122);
+            this.richTextBox1.TabIndex = 26;
+            this.richTextBox1.Text = "";
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Location = new System.Drawing.Point(319, 856);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(120, 64);
+            this.checkedListBox1.TabIndex = 27;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1073, 1028);
-            this.Controls.Add(this.comboBox1);
+            this.ClientSize = new System.Drawing.Size(1073, 1055);
+            this.Controls.Add(this.checkedListBox1);
+            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.dateTimePicker4);
             this.Controls.Add(this.dateTimePicker3);
             this.Controls.Add(this.label11);
@@ -909,17 +930,17 @@ namespace RAD
             ((System.ComponentModel.ISupportInitialize)(this.consumptionBindingNavigator)).EndInit();
             this.consumptionBindingNavigator.ResumeLayout(false);
             this.consumptionBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.consumptionBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.consumptionDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.incomeDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.providerBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.incomeBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.incomeProductDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productConsumptionDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.providerDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.paymentDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.incomeBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.providerBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.consumptionBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productConsumptionBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.incomeProductBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.paymentBindingSource)).EndInit();
@@ -1027,7 +1048,9 @@ namespace RAD
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.DateTimePicker dateTimePicker4;
         private System.Windows.Forms.DateTimePicker dateTimePicker3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
     }
 }
 
